@@ -1,0 +1,48 @@
+---
+// Styles
+import "../styles/card.css";
+
+// Models
+import { Job } from "../models/job";
+
+// Constants
+import { JOBS } from "../const/works";
+---
+
+<style>
+    section {
+        border-bottom: 1px solid white;
+    }
+
+    p, li {
+        line-height: 1.5;
+    }
+
+    svg {
+        margin-top: 20px;
+    }
+</style>
+
+<div class="card">
+    <h2>Experiencia</h2>
+    {
+        JOBS.map((job: Job) => (
+            <section>
+                <p>
+                    <b> {job.job} en {job.company} | {job.getDates()}</b><br>
+                    <b>Tecnologías: </b><span>{job.getTecnologies()}</span><br>
+                    <span>Actividades destacadas:</span>
+                </p>
+                <ul>
+                    {
+                        job.activities.map((activity: string) => <li>{activity}</li>)
+                    }
+                </ul>
+            </section>
+        ))
+    }
+    <svg viewBox="0 0 1443 155" xmlns="http://www.w3.org/2000/svg">
+        <path d="M301 56C149.25 53.6743 66.1306 30.4321 26.9197 9.84336C18.0573 5.18992 0 13.3966 0 23.4064V145C0 150.523 4.47713 155 9.99998 155H1433C1438.52 155 1443 150.523 1443 145V63.5097C1443 59.0607 1440.08 55.1628 1435.74 54.2069C1404.96 47.435 1311.56 33.777 1125 9C869 -25 562 60 301 56Z" fill="white"/>
+    </svg>
+
+</div>
