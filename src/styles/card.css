@@ -4,9 +4,9 @@
     width: 900px;
     margin: 40px auto;
     padding: 40px;
+    overflow: hidden;
 }
 
 svg {
-    margin: -40px;
-    border-radius: 0px 0px 20px 20px;
+    margin: -45px;
 }
