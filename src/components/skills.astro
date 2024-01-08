@@ -1,0 +1,71 @@
+---
+// Styles
+import "../styles/card.css";
+
+// Constants
+import { SKILLS } from "../const/skills";
+---
+
+<style>
+    p, li {
+        line-height: 1.5;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: auto auto auto auto;
+    }
+</style>
+
+<div class="card">
+    <h2>Skills</h2>
+    <div class="grid-container">
+        <section>
+            <h3>Soft skills</h3>
+            <ul>
+                {SKILLS.softskills.map((skill: string) => <li>{skill}</li>)}
+            </ul>
+        </section>
+        <section>
+            <h3>Lenguajes de programación</h3>
+            <ul>
+                {SKILLS.programmingLenguage.map((skill: string) => <li>{skill}</li>)}
+            </ul>
+        </section>
+        <section>
+            <h3>Lenguajes de marcado</h3>
+            <ul>
+                {SKILLS.markdownLenguages.map((skill: string) => <li>{skill}</li>)}
+            </ul>
+        </section>
+        <section>
+            <h3>Frameworks</h3>
+            <ul>
+                {SKILLS.frameworks.map((skill: string) => <li>{skill}</li>)}
+            </ul>
+        </section>
+        <section>
+            <h3>Bases de datos</h3>
+            <ul>
+                {SKILLS.dataBases.map((skill: string) => <li>{skill}</li>)}
+            </ul>
+        </section>
+        <section>
+            <h3>Librerias</h3>
+            <ul>
+                {SKILLS.librarys.map((skill: string) => <li>{skill}</li>)}
+            </ul>
+        </section>
+        <section>
+            <h3>Otras</h3>
+            <ul>
+                {SKILLS.others.map((skill: string) => <li>{skill}</li>)}
+            </ul>
+        </section>
+    </div>
+    <svg viewBox="0 0 696 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M583 68.2015C418 78.5105 142.173 29.7576 13.1839 1.68687C6.92748 0.325336 1 5.0801 1 11.483V89C1 94.5228 5.47717 99 11 99H685C690.523 99 695 94.5228 695 89V46.5285C695 49.8238 672.6 58.7719 583 68.2015Z" fill="white"/>
+    </svg>
+        
+</div>
