@@ -1,0 +1,16 @@
+.network-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.network-card {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.network-card-img {
+    margin: auto;
+}
