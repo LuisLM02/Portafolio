@@ -2,4 +2,15 @@ body {
     background-color: rgb(18, 18, 18);
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 40px 0px;
+}
+
+/*scroll bar styles*/
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
 }
