@@ -1,0 +1,21 @@
+p, li {
+    line-height: 1.5;
+}
+
+.skills-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media (max-width: 800px) {
+    .skills-container {
+        grid-template-columns: auto auto auto;
+    } 
+}
+
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: auto auto;
+    }
+}
